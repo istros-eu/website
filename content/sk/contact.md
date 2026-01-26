@@ -1,12 +1,12 @@
 ---
-title: "Contact"
+title: "Kontakt"
 date: 2025-01-26
 draft: false
 ---
 
-# Contact Us
+# Kontaktujte nás
 
 **Email:** info@istros.eu
 
-**Address:**  
-Your address here
+**Adresa:**  
+Slovensko

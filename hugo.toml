@@ -1,28 +1,71 @@
 baseURL = 'https://istros.eu/'
-languageCode = 'en-us'
-title = 'Spoločnosť priateľov Cypru a Grécka na Slovensku'
+defaultContentLanguage = 'sk'
 theme = 'ananke'
 
 [params]
-  description = "Spoločnosť priateľov Cypru a Grécka na Slovensku"
   author = "istros.eu"
   favicon = ""
   site_logo = ""
   background_color_class = "bg-black"
   recent_posts_number = 3
 
-[menu]
-  [[menu.main]]
-    name = "Home"
-    url = "/"
+[languages]
+  [languages.sk]
+    languageCode = 'sk'
+    languageName = 'Slovenčina'
+    title = 'Spoločnosť priateľov Cypru a Grécka na Slovensku'
     weight = 1
+    [languages.sk.params]
+      description = "Spoločnosť priateľov Cypru a Grécka na Slovensku"
+    [[languages.sk.menu.main]]
+      name = "Domov"
+      url = "/"
+      weight = 1
+    [[languages.sk.menu.main]]
+      name = "O nás"
+      url = "/about/"
+      weight = 2
+    [[languages.sk.menu.main]]
+      name = "Kontakt"
+      url = "/contact/"
+      weight = 3
   
-  [[menu.main]]
-    name = "About"
-    url = "/about/"
+  [languages.en]
+    languageCode = 'en-us'
+    languageName = 'English'
+    title = 'Society of Friends of Cyprus and Greece in Slovakia'
     weight = 2
+    [languages.en.params]
+      description = "Society of Friends of Cyprus and Greece in Slovakia"
+    [[languages.en.menu.main]]
+      name = "Home"
+      url = "/"
+      weight = 1
+    [[languages.en.menu.main]]
+      name = "About"
+      url = "/about/"
+      weight = 2
+    [[languages.en.menu.main]]
+      name = "Contact"
+      url = "/contact/"
+      weight = 3
   
-  [[menu.main]]
-    name = "Contact"
-    url = "/contact/"
+  [languages.el]
+    languageCode = 'el'
+    languageName = 'Ελληνικά'
+    title = 'Εταιρεία Φίλων της Κύπρου και της Ελλάδας στη Σλοβακία'
     weight = 3
+    [languages.el.params]
+      description = "Εταιρεία Φίλων της Κύπρου και της Ελλάδας στη Σλοβακία"
+    [[languages.el.menu.main]]
+      name = "Αρχική"
+      url = "/"
+      weight = 1
+    [[languages.el.menu.main]]
+      name = "Σχετικά"
+      url = "/about/"
+      weight = 2
+    [[languages.el.menu.main]]
+      name = "Επικοινωνία"
+      url = "/contact/"
+      weight = 3

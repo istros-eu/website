@@ -1,0 +1,52 @@
+[more]
+other = "Viac"
+
+[allTitle]
+other = "Všetky {{.Title }}"
+
+[recentTitle]
+other = "Nedávne {{.Title }}"
+
+[readMore]
+other = "čítať viac"
+
+[by]
+other = "Od"
+
+[whatsInThis]
+other = "Čo je v tomto {{ .Type }}"
+
+[related]
+other = "Súvisiace"
+
+[yourName]
+other = "Vaše meno"
+
+[emailAddress]
+other = "Emailová adresa"
+
+[message]
+other = "Správa"
+
+[emailRequiredNote]
+other = "Emailová adresa je povinná."
+
+[send]
+other = "Odoslať"
+
+[taxonomyPageList]
+other = "Nižšie nájdete stránky, ktoré využívajú taxonomický výraz \"{{ .Title }}\""
+
+[readingTime]
+one = "Jedna minúta čítania"
+other = "{{ .Count }} minút čítania"
+
+[wordCount]
+one = "Jedno slovo"
+other = "{{ .Count }} slov"
+
+[pageTitle]
+other = "Stránka {{ .Name }}"
+
+[translations]
+other = "Preklady"

@@ -9,6 +9,9 @@ theme = 'ananke'
   site_logo = ""
   background_color_class = "bg-black"
   recent_posts_number = 3
+  
+  [params.ananke]
+    show_recent_posts = false
 
 [languages]
   [languages.sk]

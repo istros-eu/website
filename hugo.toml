@@ -27,7 +27,6 @@ theme = 'ananke'
     contentDir = 'content'
     [languages.sk.params]
       description = "Spoločnosť priateľov Cypru a Grécka na Slovensku"
-      site_logo = "/logo-sk.jpeg"
     [[languages.sk.menu.main]]
       name = "Domov"
       url = "/"
@@ -49,7 +48,6 @@ theme = 'ananke'
     contentDir = 'content/en'
     [languages.en.params]
       description = "Society of Friends of Cyprus and Greece in Slovakia"
-      site_logo = "/logo-en.jpeg"
     [[languages.en.menu.main]]
       name = "Home"
       url = "/"
@@ -71,7 +69,6 @@ theme = 'ananke'
     contentDir = 'content/el'
     [languages.el.params]
       description = "Εταιρεία Φίλων της Κύπρου και της Ελλάδας στη Σλοβακία"
-      site_logo = "/logo-gr.jpeg"
     [[languages.el.menu.main]]
       name = "Αρχική"
       url = "/"

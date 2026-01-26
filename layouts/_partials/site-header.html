@@ -8,8 +8,16 @@
       {{ partials.Include "site-navigation.html" .}}
       <div class="tc-l pv4 pv6-l ph3 ph4-ns">
         <div class="flex items-center justify-center">
-          {{ with .Site.Params.site_logo }}
-            <img src="{{ urls.RelURL . }}" class="mr3" style="max-height: 100px; width: auto;" alt="{{ $.Site.Title }}" />
+          {{ $logo := "" }}
+          {{ if eq .Site.Language.Lang "sk" }}
+            {{ $logo = "/logo-sk.jpeg" }}
+          {{ else if eq .Site.Language.Lang "en" }}
+            {{ $logo = "/logo-en.jpeg" }}
+          {{ else if eq .Site.Language.Lang "el" }}
+            {{ $logo = "/logo-gr.jpeg" }}
+          {{ end }}
+          {{ if $logo }}
+            <img src="{{ $logo }}" class="mr3 mr4-l" style="max-height: 150px; width: auto;" alt="{{ $.Site.Title }}" />
           {{ end }}
           <h1 class="f2 f-subheadline-l fw2 white-90 mb0 lh-title">
             {{ .Title | compare.Default .Site.Title }}
@@ -29,8 +37,16 @@
       {{ partials.Include "site-navigation.html" . }}
       <div class="tc-l pv3 ph3 ph4-ns">
         <div class="flex items-center justify-center">
-          {{ with .Site.Params.site_logo }}
-            <img src="{{ urls.RelURL . }}" class="mr3" style="max-height: 100px; width: auto;" alt="{{ $.Site.Title }}" />
+          {{ $logo := "" }}
+          {{ if eq .Site.Language.Lang "sk" }}
+            {{ $logo = "/logo-sk.jpeg" }}
+          {{ else if eq .Site.Language.Lang "en" }}
+            {{ $logo = "/logo-en.jpeg" }}
+          {{ else if eq .Site.Language.Lang "el" }}
+            {{ $logo = "/logo-gr.jpeg" }}
+          {{ end }}
+          {{ if $logo }}
+            <img src="{{ $logo }}" class="mr3 mr4-l" style="max-height: 150px; width: auto;" alt="{{ $.Site.Title }}" />
           {{ end }}
           <h1 class="f2 f-subheadline-l fw2 light-silver mb0 lh-title">
             {{ .Title | compare.Default .Site.Title }}

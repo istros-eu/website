@@ -1,11 +1,15 @@
 baseURL = 'https://istros.eu/'
 languageCode = 'en-us'
 title = 'Spoločnosť priateľov Cypru a Grécka na Slovensku'
-theme = 'PaperMod'
+theme = 'ananke'
 
 [params]
   description = "Spoločnosť priateľov Cypru a Grécka na Slovensku"
   author = "istros.eu"
+  favicon = ""
+  site_logo = ""
+  background_color_class = "bg-black"
+  recent_posts_number = 3
 
 [menu]
   [[menu.main]]

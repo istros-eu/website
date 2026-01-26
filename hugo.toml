@@ -3,6 +3,11 @@ defaultContentLanguage = 'sk'
 defaultContentLanguageInSubdir = false
 theme = 'ananke'
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [params]
   author = "istros.eu"
   favicon = ""

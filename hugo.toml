@@ -19,6 +19,7 @@ theme = 'ananke'
     languageName = 'Slovenčina'
     title = 'Spoločnosť priateľov Cypru a Grécka na Slovensku'
     weight = 1
+    contentDir = 'content'
     [languages.sk.params]
       description = "Spoločnosť priateľov Cypru a Grécka na Slovensku"
     [[languages.sk.menu.main]]
@@ -39,6 +40,7 @@ theme = 'ananke'
     languageName = 'English'
     title = 'Society of Friends of Cyprus and Greece in Slovakia'
     weight = 2
+    contentDir = 'content/en'
     [languages.en.params]
       description = "Society of Friends of Cyprus and Greece in Slovakia"
     [[languages.en.menu.main]]
@@ -59,6 +61,7 @@ theme = 'ananke'
     languageName = 'Ελληνικά'
     title = 'Εταιρεία Φίλων της Κύπρου και της Ελλάδας στη Σλοβακία'
     weight = 3
+    contentDir = 'content/el'
     [languages.el.params]
       description = "Εταιρεία Φίλων της Κύπρου και της Ελλάδας στη Σλοβακία"
     [[languages.el.menu.main]]

@@ -1,29 +1,19 @@
 <nav class="pv3 ph3 ph4-ns" role="navigation">
   <div class="flex-l center items-center justify-between">
-    <a href="{{ site.Home.RelPermalink }}" class="f3 fw2 hover-white white-90 dib no-underline">
-      {{ with site.Params.site_logo }}
-        <img src="{{ urls.RelURL . }}" class="w100 mw5-ns" alt="{{ site.Title }}" />
+    <a href="{{ .Site.Home.RelPermalink }}" class="f3 fw2 hover-white white-90 dib no-underline">
+      {{ with .Site.Params.site_logo }}
+        <img src="{{ urls.RelURL . }}" class="w100 mw5-ns" alt="{{ $.Site.Title }}" />
       {{ else }}
-        {{ site.Title }}
+        {{ $.Site.Title }}
       {{ end }}
     </a>
     <div class="flex-l items-center">
       {{ partials.Include "i18nlist.html" . }}
-      {{ if site.Menus.main }}
-        <ul class="{{ compare.Conditional (compare.Eq site.Language.LanguageDirection "rtl") "pr0 ml3" "pl0 mr3" }}">
-          {{ range site.Menus.main }}
-          <li class="list f5 f4-ns fw4 dib {{ compare.Conditional (compare.Eq site.Language.LanguageDirection "rtl") "pl3" "pr3" }}">
-            {{ $url := .URL }}
-            {{ if .Page }}
-              {{ $url = .Page.RelPermalink }}
-            {{ else if .PageRef }}
-              {{ with site.GetPage .PageRef }}
-                {{ $url = .RelPermalink }}
-              {{ end }}
-            {{ else }}
-              {{ $url = urls.RelLangURL .URL }}
-            {{ end }}
-            <a class="hover-white white-90 no-underline" href="{{ $url }}" title="{{ lang.Translate "pageTitle" . }}">
+      {{ if .Site.Menus.main }}
+        <ul class="{{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pr0 ml3" "pl0 mr3" }}">
+          {{ range .Site.Menus.main }}
+          <li class="list f5 f4-ns fw4 dib {{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pl3" "pr3" }}">
+            <a class="hover-white white-90 no-underline" href="{{ .URL | relLangURL }}" title="{{ lang.Translate "pageTitle" . }}">
               {{ .Name }}
             </a>
           </li>

@@ -1,11 +1,11 @@
-baseURL = 'https://istros-eu.github.io/website/'
+baseURL = 'https://istros.eu/'
 languageCode = 'en-us'
-title = 'Istros NGO'
+title = 'Spoločnosť priateľov Cypru a Grécka na Slovensku'
 theme = 'PaperMod'
 
 [params]
-  description = "Istros Non-Governmental Organization"
-  author = "Istros NGO"
+  description = "Spoločnosť priateľov Cypru a Grécka na Slovensku"
+  author = "istros.eu"
 
 [menu]
   [[menu.main]]

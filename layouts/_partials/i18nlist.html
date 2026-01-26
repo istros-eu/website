@@ -1,0 +1,25 @@
+{{ if .IsTranslated }}
+<div class="language-switcher">
+  <ul class="{{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pr0 ml3" "pl0 mr3" }}">
+    {{ range .Translations }}
+    <li class="list f5 f4-ns fw4 dib {{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pl3" "pr3" }}">
+      <a class="hover-white white-90 no-underline" href="{{ .RelPermalink }}" title="{{ .Language.LanguageName }}">
+        {{ if eq .Lang "sk" }}🇸🇰{{ else if eq .Lang "en" }}🇬🇧{{ else if eq .Lang "el" }}🇬🇷{{ end }}
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+</div>
+{{ else }}
+<div class="language-switcher">
+  <ul class="{{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pr0 ml3" "pl0 mr3" }}">
+    {{ range $.Site.Home.AllTranslations }}
+    <li class="list f5 f4-ns fw4 dib {{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pl3" "pr3" }}">
+      <a class="hover-white {{ if eq .Lang $.Site.Language.Lang }}white{{ else }}white-60{{ end }} no-underline" href="{{ .RelPermalink }}" title="{{ .Language.LanguageName }}">
+        {{ if eq .Lang "sk" }}🇸🇰{{ else if eq .Lang "en" }}🇬🇧{{ else if eq .Lang "el" }}🇬🇷{{ end }}
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}

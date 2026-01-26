@@ -1,5 +1,6 @@
 baseURL = 'https://istros.eu/'
 defaultContentLanguage = 'sk'
+defaultContentLanguageInSubdir = true
 theme = 'ananke'
 
 [params]

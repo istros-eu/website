@@ -1,3 +1,24 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://istros.eu/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Istros NGO'
+theme = 'PaperMod'
+
+[params]
+  description = "Istros Non-Governmental Organization"
+  author = "Istros NGO"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 2
+  
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 3

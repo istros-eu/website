@@ -9,4 +9,4 @@ draft: false
 **Email:** info@istros.eu
 
 **Διεύθυνση:**  
-Σλοβακία
+Σλοβακία, Bratislava

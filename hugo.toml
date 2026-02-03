@@ -64,11 +64,11 @@ theme = 'ananke'
   [languages.el]
     languageCode = 'el'
     languageName = 'Ελληνικά'
-    title = 'Εταιρεία Φίλων της Κύπρου και της Ελλάδας στη Σλοβακία'
+    title = 'Σύνδεσμος Φίλων της Κύπρου και της Ελλάδας στη Σλοβακία'
     weight = 3
     contentDir = 'content/el'
     [languages.el.params]
-      description = "Εταιρεία Φίλων της Κύπρου και της Ελλάδας στη Σλοβακία"
+      description = "Σύνδεσμος Φίλων της Κύπρου και της Ελλάδας στη Σλοβακία"
     [[languages.el.menu.main]]
       name = "Αρχική"
       url = "/"
